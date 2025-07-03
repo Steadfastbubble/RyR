@@ -1,10 +1,13 @@
 import streamlit as st
 import pandas as pd
-import plotly.express
+import plotly.express as px
 
 car_data = pd.read_csv(r'C:\Users\Ferna\OneDrive\Desktop\SPRINT 7\RyR\vehicles_us.csv')
 
 st.header('DataFrame de Vehiculos')
+
+st.dataframe(data=car_data)
+
 
 hist_button = st.button('Histograma')
 
